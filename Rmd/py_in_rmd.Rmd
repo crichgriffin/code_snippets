@@ -1,0 +1,14 @@
+```{r setup, include=FALSE, echo=TRUE}
+library(reticulate)
+use_python(paste0("/well/dendrou/projects/snRNA-seq_analyses/bin/", BMRC_CPU_ARCHITECTURE, "/python3-venv-", BMRC_CPU_ARCHITECTURE, "-3.7.4/bin/python"))
+```
+
+```{python}
+test1 = [1,2,3,4,5]
+```
+
+```{r}
+print(py$test1)
+```
+
+
